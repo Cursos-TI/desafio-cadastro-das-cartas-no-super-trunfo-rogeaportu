@@ -4,7 +4,7 @@ int main(){
     // declaração de variáveis carta1
     char estado[10], codigoCarta[10], nomeCidade[100] ;
     int populacao, numeroPontosturisticos;
-    float area, pibdensidadePopulacional, pibPerCapita;
+    float area, pib,densidadePopulacional, pibPerCapita;
 
     // declaração de variáveis carta2
     char estado2[10], codigoCarta2[10], nomeCidade2[100] ;
@@ -45,6 +45,16 @@ int main(){
     scanf(" %f", &pib2);
     printf(" Numero de pontos turisticos: \n");
     scanf(" %d", &numeroPontosturisticos2);
+
+    // Calculando a densidade populacional e PIB per capita para carta 1
+    densidadePopulacional = (float)populacao / area;
+    pibPerCapita = pib / populacao;
+
+    // Calculando a densidade populacional e PIB per capita para carta 2
+    densidadePopulacional = (float)populacao2 / area2;
+    pibPerCapita = pib2/ populacao2;
+
+
 
     // apresentndo os resultados carta 1
 
