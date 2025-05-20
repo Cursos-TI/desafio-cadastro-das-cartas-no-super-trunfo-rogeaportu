@@ -4,12 +4,12 @@ int main(){
     // declaração de variáveis carta1
     char estado[10], codigoCarta[10], nomeCidade[100] ;
     int populacao, numeroPontosturisticos;
-    float area, pib;
+    float area, pibdensidadePopulacional, pibPerCapita;
 
     // declaração de variáveis carta2
     char estado2[10], codigoCarta2[10], nomeCidade2[100] ;
     int populacao2, numeroPontosturisticos2;
-    float area2, pib2;
+    float area2, pib2, densidadePopulacional2, pibPerCapita2;
 
     // coleta de informações primeira carta
     printf(" Cadastre carta 1: \n");
