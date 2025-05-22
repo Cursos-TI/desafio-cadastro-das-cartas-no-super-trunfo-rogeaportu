@@ -14,39 +14,40 @@ int main(){
     float area2, pib2, densidadePopulacional2, pibPerCapita2, superPoder2 ;
 
     // coleta de informações primeira carta
-    printf(" Cadastre carta 1: \n");
+    printf("Cadastre carta 1: \n");
     printf("Cadastre o estado: \n");
-    scanf(" %s", estado);
-    printf(" Cadastre codigo: \n");
-    scanf(" %s", codigoCarta);
-    printf(" Cadastre o nome da Cidade: \n");
-    scanf(" %s", nomeCidade);
-    printf(" Populacao: \n");
-    scanf(" %d", &populacao);
-    printf(" Area Km2: \n");
-    scanf(" %f", &area);
-    printf(" Pib: \n");
-    scanf(" %f", &pib);
-    printf(" Numero de pontos turisticos: \n");
-    scanf(" %d", &numeroPontosturisticos);
+    scanf("%2s", &estado); // ler a sigla 2 digitos
+    printf("Cadastre codigo: \n");
+    scanf("%2s", &codigoCarta); // ler o codigo 2 digitos
+    printf("Cadastre o nome da Cidade: \n");
+    scanf("%s", nomeCidade);
+    printf("Populacao: \n");
+    scanf("%lu", &populacao); // Alterado para unsigned long int
+    printf("Area Km2: \n");
+    scanf("%f", &area);
+    printf("Pib: \n");
+    scanf("%f", &pib);
+    printf("Numero de pontos turisticos: \n");
+    scanf("%d", &numeroPontosturisticos);
+    printf("\n");
 
     // coleta de informações segunda carta
 
-    printf(" Cadastre carta 2: \n");
+    printf("Cadastre carta 2: \n");
     printf("Cadastre o estado: \n");
-    scanf(" %s", estado2);
-    printf(" Cadastre codigo: \n");
-    scanf(" %s", codigoCarta2);
-    printf(" Cadastre o nome da Cidade: \n");
-    scanf(" %s", nomeCidade2);
-    printf(" Populacao: \n");
-    scanf(" %d", &populacao2);
-    printf(" Area Km2: \n");
-    scanf(" %f", &area2);
-    printf(" Pib: \n");
-    scanf(" %f", &pib2);
-    printf(" Numero de pontos turisticos: \n");
-    scanf(" %d", &numeroPontosturisticos2);
+    scanf("%2s", &estado2); // ler a sigla 2 digitos
+    printf("Cadastre codigo: \n");
+    scanf("%2s", &codigoCarta2); // ler a codigo 2 digitos
+    printf("Cadastre o nome da Cidade: \n");
+    scanf("%s", nomeCidade2);
+    printf("Populacao: \n");
+    scanf("%lu", &populacao2); // Alterado para unsigned long int
+    printf("Area Km2: \n");
+    scanf("%f", &area2);
+    printf("Pib: \n");
+    scanf("%f", &pib2);
+    printf("Numero de pontos turisticos: \n");
+    scanf("%d", &numeroPontosturisticos2);
 
     // Calculando a densidade populacional e PIB per capita para carta 1
     densidadePopulacional = (float)populacao / area;
