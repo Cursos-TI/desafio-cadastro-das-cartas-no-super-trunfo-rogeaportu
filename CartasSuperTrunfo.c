@@ -57,6 +57,11 @@ int main(){
     densidadePopulacional2 = (float)populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
+    // Calculando o Super Poder para cada carta 
+    // somando os atributos,  densidade usamos o inverso de densidade populaconal = area / população
+    // para que quanto menor a densidade, maior o poder.
+    superPoder = (float)populacao + area + pib + numeroPontosturisticos + pibPerCapita + (area /(float)populacao);
+    superPoder2 = (float)populacao2 + area2 + pib2 + numeroPontosturisticos2 + pibPerCapita2 + (area2 /(float)populacao2);
 
 
     // apresentndo os resultados carta 1
