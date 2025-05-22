@@ -2,14 +2,16 @@
 
 int main(){
     // declaração de variáveis carta1
-    char estado[10], codigoCarta[10], nomeCidade[100] ;
-    int populacao, numeroPontosturisticos;
-    float area, pib,densidadePopulacional, pibPerCapita;
+    char estado[3], codigoCarta[3], nomeCidade[100] ;
+    unsigned long int populacao; // Alterado para unsigned long 
+    int numeroPontosturisticos;
+    float area, pib, densidadePopulacional, pibPerCapita, superPoder;
 
     // declaração de variáveis carta2
-    char estado2[10], codigoCarta2[10], nomeCidade2[100] ;
-    int populacao2, numeroPontosturisticos2;
-    float area2, pib2, densidadePopulacional2, pibPerCapita2;
+    char estado2[3], codigoCarta2[3], nomeCidade2[100] ;
+    unsigned long int populacao2; // Alterado para unsigned long int
+    int numeroPontosturisticos2;
+    float area2, pib2, densidadePopulacional2, pibPerCapita2, superPoder2 ;
 
     // coleta de informações primeira carta
     printf(" Cadastre carta 1: \n");
@@ -65,7 +67,7 @@ int main(){
     printf("População: %d\n", populacao);
     printf("Área: %.2f km2\n", area);
     printf("PIB: %.2f Bilhões\n", pib);
-    printf("Número de pontos turisticos: %d\n", numeroPontosturisticos2);
+    printf("Número de pontos turisticos: %d\n", numeroPontosturisticos);
     printf("Densidade Populacional: %.2f hab/km2\n", densidadePopulacional);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita);
     
