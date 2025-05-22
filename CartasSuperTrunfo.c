@@ -93,6 +93,34 @@ int main(){
     printf("Super Poder: %.2f\n", superPoder2);
     printf("\n");
 
+    // comparação de Cartas ---
+    printf("Comparacao de Cartas \n");
+    printf("1 Vencedor, 0 Perdedor \n");
+    printf("\n");
+
+    // Comparando População
+    printf("Populacao: Carta 1: %lu é maior que  Carta 2: %lu resultado = %d\n", populacao, populacao2, populacao > populacao2 );
+
+    // Comparando area
+    printf("Area km2: Carta 1: %.2f é maior que  Carta 2: %.2f resultado = %d\n", area, area2, area > area2 );
+
+    // Comparando PIB
+    printf("PIB: Carta 1: %.2f é maior que Carta 2: %.2f resultado = %d\n", pib, pib2, pib > pib2);
+
+    // Comparando Pontos turisticos
+    printf("Pontos turisticos: Carta 1: %d é maior que Carta 2: %d resultado = %d\n", numeroPontosturisticos, numeroPontosturisticos2, numeroPontosturisticos > nomeCidade2 );
+
+    // Comparando Desnsidade populacional
+    printf("Densidade populacional: Carta 1: %.2f é maior que Carta 2: %.2f resultado = %d\n", densidadePopulacional, densidadePopulacional2, densidadePopulacional > densidadePopulacional2 );
+
+    // Comparando PIB Percapita
+    printf("Pib Percapita: Carta 1: %.2f é maior que  Carta 2: %.2f resultado = %d\n", pibPerCapita, pibPerCapita2, pibPerCapita > pibPerCapita2 );
+
+
+    // Comparando Super Poder
+    printf("Super Podder: Carta 1: %.2f  é maior que Carta 2: %.2fsp resultado = %d\n", superPoder, superPoder2, superPoder > superPoder2 );
+
+
     return 0;
 
 }
