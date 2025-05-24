@@ -16,9 +16,9 @@ int main(){
     // coleta de informações primeira carta
     printf("Cadastre carta 1: \n");
     printf("Cadastre o estado: \n");
-    scanf("%2s", &estado); // ler a sigla 2 digitos
+    scanf("%s", &estado); // ler a sigla 2 digitos
     printf("Cadastre codigo: \n");
-    scanf("%2s", &codigoCarta); // ler o codigo 2 digitos
+    scanf("%s", &codigoCarta); // ler o codigo 2 digitos
     printf("Cadastre o nome da Cidade: \n");
     scanf("%s", nomeCidade);
     printf("Populacao: \n");
@@ -35,9 +35,9 @@ int main(){
 
     printf("Cadastre carta 2: \n");
     printf("Cadastre o estado: \n");
-    scanf("%2s", &estado2); // ler a sigla 2 digitos
+    scanf("%s", &estado2); // ler a sigla 2 digitos
     printf("Cadastre codigo: \n");
-    scanf("%2s", &codigoCarta2); // ler a codigo 2 digitos
+    scanf("%s", &codigoCarta2); // ler a codigo 2 digitos
     printf("Cadastre o nome da Cidade: \n");
     scanf("%s", nomeCidade2);
     printf("Populacao: \n");
