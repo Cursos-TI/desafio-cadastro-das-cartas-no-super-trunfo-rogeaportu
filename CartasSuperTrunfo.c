@@ -52,10 +52,12 @@ int main(){
     // Calculando a densidade populacional e PIB per capita para carta 1
     densidadePopulacional = (float)populacao / area;
     pibPerCapita = pib / populacao;
+    densidadeInvertida = area / populacao; // Inverso da densidade populacional
 
     // Calculando a densidade populacional e PIB per capita para carta 2
     densidadePopulacional2 = (float)populacao2 / area2;
-    pibPerCapita2 = pib2 / populacao2;
+    pibPerCapita2 = pib2/ (float) populacao2;
+    densidadeInvertida2 = area2 /(float) populacao2; // Inverso da densidade populacional 2
 
     // Calculando o Super Poder para cada carta 
     // somando os atributos,  densidade usamos o inverso de densidade populaconal = area / população
