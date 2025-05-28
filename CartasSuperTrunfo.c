@@ -182,7 +182,42 @@ int main(){
     } else {
         printf("Empate!\n\n");
     }
+    // Comparação usando switch case
 
+    switch (opcao) {
+        case 1: soma1 += populacao; soma2 += populacao2; break;
+        case 2: soma1 += area; soma2 += area2; break;
+        case 3: soma1 += pib; soma2 += pib2; break;
+        case 4: soma1 += numeroPontosturisticos; soma2 += numeroPontosturisticos2; break;
+        case 5: soma1 += (densidadePopulacional < densidadePopulacional2) ? densidadePopulacional : densidadePopulacional2; break;
+        case 6: soma1 += pibPerCapita; soma2 += pibPerCapita2; break;
+        case 7: soma1 += superPoder; soma2 += superPoder2; break;
+    }
+
+    switch (opcao2) {
+        case 1: soma1 += populacao; soma2 += populacao2; break;
+        case 2: soma1 += area; soma2 += area2; break;
+        case 3: soma1 += pib; soma2 += pib2; break;
+        case 4: soma1 += numeroPontosturisticos; soma2 += numeroPontosturisticos2; break;
+        case 5: soma1 += (densidadePopulacional < densidadePopulacional2) ? densidadePopulacional : densidadePopulacional2; break;
+        case 6: soma1 += pibPerCapita; soma2 += pibPerCapita2; break;
+        case 7: soma1 += superPoder; soma2 += superPoder2; break;
+    }
+
+    // Exibição dos resultados da somas dos atributos
+    printf("\nResultados:\n");
+    printf("Carta 1 - %s (%s): Soma dos atributos: %.2f\n", nomeCidade, estado, soma1);
+    printf("Carta 2 - %s (%s): Soma dos atributos: %.2f\n", nomeCidade2, estado2, soma2);
+
+    // Determinar vencedor
+    if (soma1 > soma2) {
+        printf("Vencedor: %s\n", nomeCidade);
+    } else if (soma2 > soma1) {
+        printf("Vencedor: %s\n", nomeCidade2);
+    } else {
+        printf("Empate!\n");
+    }
+   
 
     return 0;
 
