@@ -2,16 +2,16 @@
 
 int main(){
     // declaração de variáveis carta1
-    char estado[3], codigoCarta[3], nomeCidade[100] ;
+     char estado[3], codigoCarta[3], nomeCidade[100] ;
     unsigned long int populacao; // Alterado para unsigned long 
-    int numeroPontosturisticos;
-    float area, pib, densidadePopulacional, pibPerCapita, superPoder;
+    int numeroPontosturisticos, opcao, opcao2;
+    float area, pib, densidadePopulacional, densidadeInvertida, pibPerCapita, superPoder, soma1, valor1;
 
     // declaração de variáveis carta2
     char estado2[3], codigoCarta2[3], nomeCidade2[100] ;
     unsigned long int populacao2; // Alterado para unsigned long int
     int numeroPontosturisticos2;
-    float area2, pib2, densidadePopulacional2, pibPerCapita2, superPoder2 ;
+    float area2, pib2, densidadePopulacional2, densidadeInvertida2, pibPerCapita2, superPoder2, soma2, valor2;
 
     // coleta de informações primeira carta
     printf("Cadastre carta 1: \n");
@@ -66,7 +66,7 @@ int main(){
 
     // apresentndo os resultados carta 1
 
-     printf("Carta 1:\n");
+    printf("Carta 1:\n");
     printf("Estado: %c\n", estado);
     printf("Código: %c\n", codigoCarta);
     printf("Nome da Cidade: %s\n", nomeCidade);
@@ -93,7 +93,6 @@ int main(){
     printf("Super Poder: %.2f\n", superPoder2);
     printf("\n");
 
-    // comparação de Cartas ---
     // comparação de Cartas ---
     printf("Comparacao de Cartas \n");
     printf("\n");
